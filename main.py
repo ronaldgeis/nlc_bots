@@ -126,9 +126,13 @@ class WebhookHandler(webapp2.RequestHandler):
         # CUSTOMIZE FROM HERE
 
         elif 'who are you' in text:
-            reply('telebot starter kit, created by yukuku: https://github.com/yukuku/telebot')
-        elif 'what time' in text:
-            reply('look at the corner of your screen!')
+            reply('I\'m a computer; a computer-y guy \nEverything made out of buttons and wires \nI\'d like to show ya- Into my digital life \nInside of my mind, there is a digital mind...')
+        elif 'what\'s nine plus ten?' in text:
+            reply('twenny wan')
+        elif 'shut up' in text:
+            reply('DoN\'T tOucH MEeEee!')
+        elif 'SHOW ME YA MOVES' in text:
+            reply('YES!')
         else:
             if getEnabled(chat_id):
                 reply('I got your message! (but I do not know how to answer)')
